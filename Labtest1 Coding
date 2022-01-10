@@ -17,11 +17,10 @@ class Labtest {
 		int quan;
 		int quan2;
 		int quan3;
-		int total;
-		int dis= 0;
-		int paid;
+		double total;
+		double dis= 0;
+		double paid;
 		
-		System.out.println("Welcome to C mart shopping comples");
 		System.out.print("Enter the number of items: ");
 		item = sc.nextInt();
 		
@@ -53,11 +52,12 @@ class Labtest {
 		}
 	
 		
-		System.out.println("Total price : RM" + total);
-		System.out.println("Discount Received : RM" + dis);
-		
+		System.out.printf("Total price : RM%.2f" , total);
+		System.out.println();
+		System.out.printf("Discount Received : RM%.2f" , dis);
+		System.out.println();
 		paid = total - dis;
-		System.out.print("Price to be paid RM:" + paid);
+		System.out.printf("Price to be paid RM:%.2f" , paid);
 		
 
 	}
