@@ -1,0 +1,11 @@
+Welcome to C mart shopping comples
+Enter the number of items: 3
+Enter price of first item : RM150
+Enter the quantity of first items: 2
+Enter price of second item : RM50
+Enter the quantity of second items: 3
+Enter price of third item : RM30
+Enter the quantity of third items: 1
+Total price : RM480
+Discount Received : RM96
+Price to be paid RM:384
