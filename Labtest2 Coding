@@ -1,0 +1,40 @@
+package quiz;
+import java.util.Scanner;
+class Labtest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int hour;
+		int wages = 5;
+		double sales;
+		double comA=0.5, comB=0.10, comC=0.15;
+		int dailyWages;
+		double com;
+		double total;
+		System.out.print("Enter sales:RM");
+		sales = sc.nextDouble();
+		
+		System.out.print("Enter hours worked :");
+		hour = sc.nextInt();
+		
+		if (sales>=150 && sales<=300)
+			 com = sales * comA;
+		else if (sales>=301 && sales<=500)
+			com = sales * comB;
+		else
+			com = sales* comC;
+	
+		
+		dailyWages= hour * wages;
+		total = dailyWages+ com;
+		
+		System.out.printf("Comission :RM%.2f", com);
+		System.out.println();
+		System.out.printf("Daily wages:RM%.2f",total);
+
+	}
+
+}
