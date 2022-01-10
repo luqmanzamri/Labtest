@@ -1,0 +1,65 @@
+package quiz;
+import java.util.Scanner;
+class Labtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		
+		int item;
+		int itemA;
+		int itemB;
+		int itemC;
+		int price;
+		int price2;
+		int price3; 
+		int quan;
+		int quan2;
+		int quan3;
+		int total;
+		int dis= 0;
+		int paid;
+		
+		System.out.println("Welcome to C mart shopping comples");
+		System.out.print("Enter the number of items: ");
+		item = sc.nextInt();
+		
+		System.out.print("Enter price of first item : RM");
+		price = sc.nextInt();
+		System.out.print("Enter the quantity of first items: ");
+		quan = sc.nextInt();
+		
+		System.out.print("Enter price of second item : RM");
+		price2 = sc.nextInt();
+		System.out.print("Enter the quantity of second items: ");
+		quan2 = sc.nextInt();
+		
+		System.out.print("Enter price of third item : RM");
+		price3 = sc.nextInt();
+		System.out.print("Enter the quantity of third items: ");
+		quan3 = sc.nextInt();
+
+		
+		total = (price * quan)+(price2*quan2)+(price3*quan3);
+		
+		if (total >100)
+		{
+			dis = total*20/100;
+		}
+		else
+		{
+			dis = total*10/100;
+		}
+	
+		
+		System.out.println("Total price : RM" + total);
+		System.out.println("Discount Received : RM" + dis);
+		
+		paid = total - dis;
+		System.out.print("Price to be paid RM:" + paid);
+		
+
+	}
+
+}
